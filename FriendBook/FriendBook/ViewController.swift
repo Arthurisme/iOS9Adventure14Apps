@@ -39,9 +39,14 @@ return myFriends.count
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        self.prepareForSegue("FriendListToFriendDetailSegue", sender: self)
+    
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier ("FriendListToFriendDetailSegue", sender: self)
+
     }
+    
+   
 
 }
 
