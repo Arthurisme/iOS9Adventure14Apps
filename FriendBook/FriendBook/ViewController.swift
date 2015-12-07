@@ -38,6 +38,10 @@ return myFriends.count
         return cell
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        self.prepareForSegue("FriendListToFriendDetailSegue", sender: self)
+    }
 
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1DE0511C15CE5600C4D3FF /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DE0501C15CE5600C4D3FF /* FriendDetailViewController.swift */; };
 		8E8CBA5B1C0E711600AB1E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8CBA5A1C0E711600AB1E48 /* AppDelegate.swift */; };
 		8E8CBA5D1C0E711600AB1E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8CBA5C1C0E711600AB1E48 /* ViewController.swift */; };
 		8E8CBA601C0E711600AB1E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8CBA5E1C0E711600AB1E48 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E1DE0501C15CE5600C4D3FF /* FriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		8E8CBA571C0E711600AB1E48 /* FriendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8CBA5A1C0E711600AB1E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E8CBA5C1C0E711600AB1E48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				8E8CBA5A1C0E711600AB1E48 /* AppDelegate.swift */,
 				8E8CBA5C1C0E711600AB1E48 /* ViewController.swift */,
+				8E1DE0501C15CE5600C4D3FF /* FriendDetailViewController.swift */,
 				8E8CBA5E1C0E711600AB1E48 /* Main.storyboard */,
 				8E8CBA611C0E711600AB1E48 /* Assets.xcassets */,
 				8E8CBA631C0E711600AB1E48 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				8E8CBA5D1C0E711600AB1E48 /* ViewController.swift in Sources */,
 				8E8CBA5B1C0E711600AB1E48 /* AppDelegate.swift in Sources */,
+				8E1DE0511C15CE5600C4D3FF /* FriendDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 				8E8CBA6B1C0E711600AB1E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
