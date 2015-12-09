@@ -9,16 +9,24 @@
 import UIKit
 
 class FriendDetailViewController: UIViewController {
+    @IBOutlet weak var LabelFriendName: UILabel!
+    @IBOutlet weak var LabelFriendBirthday: UILabel!
+    
+    var friendName = "Joe"
+    var friendBirthday = "June 12"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.LabelFriendName.text = "\(self.friendName)'s birthday is: "
+        self.LabelFriendBirthday.text = self.friendBirthday
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+  
     }
     
 

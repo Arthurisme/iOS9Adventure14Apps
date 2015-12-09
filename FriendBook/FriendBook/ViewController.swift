@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController , UITableViewDataSource,UITableViewDelegate{
     @IBOutlet weak var TableView: UITableView!
     
-    let myFriends = ["1","2","3","4","5","6","7",]
+    let myFriends = ["Bush","Tramp","Henny","Joe","Tom","Dienkens","Rods"]
+    
+    var selectedFriend = "Joe"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,11 +44,19 @@ return myFriends.count
     
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedFriend = myFriends[indexPath.row]
         self.performSegueWithIdentifier ("FriendListToFriendDetailSegue", sender: self)
 
     }
     
-   
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.identifier == "FriendListToFriendDetailSegue"){
+    
+        let detailViewController = segue.destinationViewController as! FriendDetailViewController
+        detailViewController.friendName = self.selectedFriend
+        }
+    }
 
 }
 
